@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option go_package = "./proto";
+
+package proto.maps;
+
+message Student {
+    map<string, int32> scores = 1;
+}

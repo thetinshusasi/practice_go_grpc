@@ -1,0 +1,28 @@
+
+syntax = "proto3";
+
+option go_package = "./proto";
+
+package proto.oneOfs;
+
+message Shape {
+    oneof shape {
+      Circle circle = 1;
+      Rectangle rectangle = 2;
+      Triangle triangle = 3;
+    }
+  }
+  
+  message Circle {
+    float radius = 1;
+  }
+  
+  message Rectangle {
+    float width = 1;
+    float height = 2;
+  }
+  
+  message Triangle {
+    float base = 1;
+    float height = 2;
+  }
